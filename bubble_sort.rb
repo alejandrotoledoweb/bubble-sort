@@ -1,4 +1,5 @@
-# function that takes the array bubble_sort
+# function that takes the array bubble sort
+
 def bubble_sort(arr)
   n = arr.length
   swapped = true
@@ -36,5 +37,5 @@ def bubble_sort_by(arr)
   p arr
 end
 
-bubble_sort([4, 3, 78, 2, 0, 2])
-bubble_sort_by(["hi", "hello", "hey"])
+bubble_sort[4, 3, 78, 2, 0, 2]
+bubble_sort_by['hi', 'hello', 'hey']
