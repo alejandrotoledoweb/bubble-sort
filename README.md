@@ -23,7 +23,9 @@ In the code we have 2 methods, the first one is to sort numbers and the second o
 ### Setup
 
 - Clone the repository to your computer, or you download the zip file containing the repository files.
-- File editing can then be applied using the code editor.
+- Open the file "bubble_sort.rb" with your code editor to see the code.
+- Run the "bubble_sort.rb" in the terminal using the command "ruby bubble_sort.rb".
+- If you like you could only use the live demo link in this description and see the code and how it works.
 
 
 ## Authors
