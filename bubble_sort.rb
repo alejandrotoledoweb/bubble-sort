@@ -1,4 +1,4 @@
-def bubble_sort(arr)
+def bubble_sort(array)
   n = arr.length
   no_swapped = true
 
@@ -6,19 +6,18 @@ def bubble_sort(arr)
   while no_swapped
     no_swapped = false
     (1...n).each do |i|
-      if arr[i - 1] > arr[i]
-        arr[i - 1], arr[i] = arr[i], arr[i - 1]
+      if array[i - 1] > array[i]
+        array[i - 1], array[i] = array[i], array[i - 1]
         no_swapped = true
       end
     end
   end
-  p arr
+  p array
 end
 
 def bubble_sort_by(arr)
   n = arr.length
   no_swapped = true
-
   # swapp loop
   while no_swapped
     no_swapped = false
@@ -34,4 +33,4 @@ def bubble_sort_by(arr)
 end
 
 bubble_sort([4, 3, 78, 2, 0, 2])
-bubble_sort_by(%w[hi hello hey])
+bubble_sort_by(%w[hey hi hello])
