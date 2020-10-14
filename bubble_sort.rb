@@ -1,6 +1,9 @@
+# function that takes the array bubble_sort()
 def bubble_sort(arr)
   n = arr.length
   swapped = true
+
+  #this loop code runs until there is nothing to swap
   until !swapped
     swapped = false
     (1...n).each do |i|
@@ -14,7 +17,5 @@ def bubble_sort(arr)
   p arr
 end
 
-bubble_sort([3,1,8,4,5])
-bubble_sort([10,9,8,7,6,5,4])
-bubble_sort([150,12,1545,10650,2,77])
-bubble_sort([0,2,0,2,5,4,5])
+
+
