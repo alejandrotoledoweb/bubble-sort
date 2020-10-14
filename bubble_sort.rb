@@ -1,4 +1,3 @@
-
 def bubble_sort(arr)
   n = arr.length
   no_swapped = true
