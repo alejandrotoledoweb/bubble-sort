@@ -14,7 +14,6 @@ def bubble_sort(arr)
       end
     end
   end
-  arr
   p arr
 end
 
@@ -33,9 +32,8 @@ def bubble_sort_by(arr)
       end
     end
   end
-  arr
   p arr
 end
 
-bubble_sort[4, 3, 78, 2, 0, 2]
-bubble_sort_by['hi', 'hello', 'hey']
+bubble_sort([4, 3, 78, 2, 0, 2])
+bubble_sort_by(['hi', 'hello', 'hey'])
