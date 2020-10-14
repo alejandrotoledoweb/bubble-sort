@@ -1,7 +1,7 @@
+
 def bubble_sort(array)
   n = array.length
   no_swapped = true
-
   # this loop code runs until there is nothing to swap
   while no_swapped
     no_swapped = false
@@ -12,13 +12,12 @@ def bubble_sort(array)
       end
     end
   end
-  array
+  p array
 end
 
-def bubble_sort_by(arr)
+def bubble_sort_by(arr) 
   n = arr.length
   no_swapped = true
-
   # swapp loop
   while no_swapped
     no_swapped = false
@@ -30,8 +29,8 @@ def bubble_sort_by(arr)
       end
     end
   end
-  arr
+  yield p arr
 end
 
-print bubble_sort([4, 3, 78, 2, 0, 2])
-print bubble_sort_by(%w[hey hi hello])
+bubble_sort([4, 3, 78, 2, 0, 2])
+bubble_sort_by(%w[hi hello hey])
