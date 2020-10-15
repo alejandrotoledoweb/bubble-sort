@@ -26,6 +26,7 @@ def bubble_sort_by(arr)
         var = yield(arr[i - 1], arr[i])
       else
         puts "we need a block"
+      end  
       if var.positive?
         arr[i - 1], arr[i] = arr[i], arr[i - 1]
         no_swapped = true
