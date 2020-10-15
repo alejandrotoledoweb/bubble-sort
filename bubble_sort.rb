@@ -11,28 +11,25 @@ def bubble_sort(array)
       end
     end
   end
-  p array
+  array
 end
 
 def bubble_sort_by(arr)
-  n = arr.length
+  n = arr.length - 1
   no_swapped = true
-  # swapp loop
-  while no_swapped
+  loop do
     no_swapped = false
     (1...n).each do |i|
-      # compare the length of the strings into the array arr
-      var = arr[i] <=> arr[i - 1]
-      if block_given?
-        var = yield(arr[i - 1], arr[i])
-      end
-      if var.positive?
-        arr[i - 1], arr[i] = arr[i], arr[i - 1]
+      var = yield(arr[i], arr[i + 1])
+      if var >= 1
+        arr[i], arr[i + 1] = arr[i + 1], arr[i]
         no_swapped = true
       end
     end
+
+    break unless no_swapped
   end
-  p arr
+  arr
 end
 
 bubble_sort([4, 3, 78, 2, 0, 2])
