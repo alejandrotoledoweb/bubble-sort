@@ -23,9 +23,7 @@ def bubble_sort_by(arr)
     (1...n).each do |i|
       # compare the length of the strings into the array arr
       var = arr[i] <=> arr[i - 1]
-      if block_given?
-        var = yield(arr[i - 1], arr[i])
-      end
+      var = yield(arr[i - 1], arr[i]) if block_given?
       if var.positive?
         arr[i - 1], arr[i] = arr[i], arr[i - 1]
         no_swapped = true
