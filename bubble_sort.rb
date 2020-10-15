@@ -25,7 +25,7 @@ def bubble_sort_by(arr)
       if block_given? && true
         var = yield(arr[i - 1], arr[i]) 
       else
-        var = arr[i] < = > arr[i - 1]
+        var = arr[i] <=> arr[i - 1]
       end
       if var.positive?
         arr[i - 1], arr[i] = arr[i], arr[i - 1]
