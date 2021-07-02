@@ -10,9 +10,9 @@ In the code we have 2 methods, the first one is to sort numbers and the second o
 
 - Ruby
 
-## Live Demo
+<!-- ## Live Demo
 
-- [Live Demo Link](https://repl.it/repls/AcidicVacantAutoexec#main.rb)
+- [Live Demo Link](https://repl.it/repls/AcidicVacantAutoexec#main.rb) -->
 
 ### Prerequisites
 
